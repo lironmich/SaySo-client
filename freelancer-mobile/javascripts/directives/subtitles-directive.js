@@ -1,7 +1,7 @@
 angular.module('sayso')
     .directive('subtitles', ['videoService', 'subtitlesService', function(videoService, subtitlesService) {
         return {
-            templateUrl: 'partials/subtitles.html',
+            templateUrl: '/public/apps/SaySo-client/freelancer-mobile/partials/subtitles.html',
             restrict: 'E',
             scope: {
                 name: '=',

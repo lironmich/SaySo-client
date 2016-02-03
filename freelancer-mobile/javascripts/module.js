@@ -1,12 +1,12 @@
 angular.module('sayso', ['ngRoute', 'ngSanitize'])
-    .constant('MOVIES_URL', 'data/movies.json')
-    .constant('SUBTITLES_URL', 'data/subtitles/movie.orig.json')
+    .constant('MOVIES_URL', 'http://127.0.0.1:8888/rdata/movies')
+    .constant('SUBTITLES_URL', 'http://127.0.0.1:8888/rdata/subtitle')
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {
                 controller: 'mainController',
                 controllerAs: 'main',
-                templateUrl: 'partials/main.html'
+                templateUrl: 'http://127.0.0.1:8888/public/apps/SaySo-client/freelancer-mobile/partials/main.html'
             })
             .otherwise('/');
     }]);
