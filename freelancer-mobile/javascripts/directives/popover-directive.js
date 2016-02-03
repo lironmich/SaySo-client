@@ -1,7 +1,7 @@
 angular.module('sayso')
     .directive('popover', ['videoService', function(videoService) {
         return {
-            templateUrl: 'partials/popover.html',
+            templateUrl: '/public/apps/SaySo-client/freelancer-mobile/partials/popover.html',
             restrict: 'E',
             scope: {
                 movie: '=',

@@ -5,7 +5,7 @@ angular.module('sayso')
         defer = $q.defer();
 
         $http
-            .get(MOVIES_URL)
+            .get('http://127.0.0.1:8888/rdata/movies')
             .then(function(response) {
                 defer.resolve(response.data);
             })

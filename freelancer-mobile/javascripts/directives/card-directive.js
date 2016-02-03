@@ -1,7 +1,7 @@
 angular.module('sayso')
     .directive('card', [function() {
         return {
-            templateUrl: 'partials/card.html',
+            templateUrl: '/public/apps/SaySo-client/freelancer-mobile/partials/card.html',
             restrict: 'E',
             scope: {
                 image: '@',
