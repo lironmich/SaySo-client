@@ -6,12 +6,12 @@ angular.module('sayso', ['ngRoute', 'ngSanitize','appConfig'])
             .when('/', {
                 controller: 'mainController',
                 controllerAs: 'main',
-                templateUrl: 'partials/main.html'
+                templateUrl: 'public/apps/SaySo-client/sayso-client/partials/main.html'
             })
             .when('/teacher', {
                 controller: 'teacherController',
                 controllerAs: 'teacher',
-                templateUrl: 'partials/teacher.html'
+                templateUrl: 'public/apps/SaySo-client/sayso-client/partials/teacher.html'
             })
             .otherwise('/');
     }]);
